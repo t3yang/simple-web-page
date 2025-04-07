@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Web Page</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Left-side Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="javascript:void(0);" onclick="showSection('home')">Home</a></li>
+            <li><a href="javascript:void(0);" onclick="showSection('about')">About</a></li>
+            <li><a href="javascript:void(0);" onclick="showSection('services')">Services</a></li>
+            <li><a href="javascript:void(0);" onclick="showSection('contact')">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Area -->
+    <div class="content">
+        <!-- Home Section -->
+        <div id="home" class="section">
+            <h1>Welcome to Our Website!</h1>
+            <p>We are thrilled to have you here. Our website is designed to provide you with valuable information about our business and services. Take a look at the various sections to learn more about what we offer.</p>
+            <p>Explore our site and don't hesitate to reach out if you have any questions!</p>
+        </div>
+
+        <!-- About Section -->
+        <div id="about" class="section" style="display: none;">
+            <h2>About Us</h2>
+            <p>We are a passionate team dedicated to providing the best services in the industry. Our goal is to help businesses thrive by offering innovative solutions and support.</p>
+            <p>Founded in 2020, we have already helped hundreds of businesses improve their operations and reach their full potential.</p>
+            <p>Our mission is simple: to provide high-quality services with a focus on customer satisfaction. We believe in building long-term relationships with our clients.</p>
+        </div>
+
+        <!-- Services Section -->
+        <div id="services" class="section" style="display: none;">
+            <h2>Our Services</h2>
+            <p>We offer a wide range of services designed to help businesses grow and succeed. Here are some of the key services we provide:</p>
+            <ul>
+                <li><strong>Consulting:</strong> Tailored business consulting to help you make the best decisions for your company.</li>
+                <li><strong>Web Design:</strong> Professional website design services to give your business a strong online presence.</li>
+                <li><strong>Marketing Strategy:</strong> Comprehensive marketing strategies to increase your visibility and attract more customers.</li>
+                <li><strong>Software Development:</strong> Custom software solutions to streamline your business operations.</li>
+                <li><strong>Customer Support:</strong> 24/7 customer support to ensure your business runs smoothly.</li>
+            </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div id="contact" class="section" style="display: none;">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, or if you are interested in learning more about our services, feel free to reach out to us!</p>
+            <p>You can contact us through the following methods:</p>
+            <ul>
+                <li><strong>Email:</strong> contact@ourbusiness.com</li>
+                <li><strong>Phone:</strong> (123) 456-7890</li>
+                <li><strong>Address:</strong> 123 Business Ave, City, Country</li>
+            </ul>
+            <p>We look forward to hearing from you!</p>
+        </div>
+        
+        <!-- Image and Button -->
+        <img src="image-ex.jpg" alt="Business & Services Illustration" class="business-image">
+        <button id="alertButton">Click Me!</button>
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>

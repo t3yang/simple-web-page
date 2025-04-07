@@ -1,0 +1,122 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4F4F4; /* Light gray background for elegance */
+    color: #333; /* Dark gray text */
+    display: flex;
+}
+
+nav {
+    width: 220px; /* Left-side navigation bar width */
+    background-color: #333; /* Dark background for navigation */
+    height: 100vh; /* Full height */
+    position: fixed; /* Fixed on the left */
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+nav ul li {
+    margin: 15px 0;
+}
+
+nav ul li a {
+    color: #FFFFFF; /* White text for links */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500; /* Slightly bold for elegance */
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s, padding-left 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #666; /* Darker gray when hovering */
+    padding-left: 30px; /* Adding a subtle sliding effect */
+}
+
+.content {
+    margin-left: 240px; /* To ensure content is not hidden behind the nav */
+    padding: 40px;
+    max-width: 900px;
+    margin-top: 30px;
+    font-family: 'Playfair Display', serif; /* Elegant font for headings */
+}
+
+h1, h2 {
+    color: #333;
+    font-family: 'Playfair Display', serif; /* Elegant serif font for headings */
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+p {
+    font-family: 'Lora', serif; /* Elegant serif font for paragraphs */
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555; /* Slightly lighter gray for text */
+    font-weight: 400;
+    margin-bottom: 20px;
+    max-width: 800px; /* Keep paragraphs at a comfortable width */
+}
+
+ul {
+    margin-left: 20px;
+    font-size: 16px;
+    color: #444;
+}
+
+.business-image {
+    display: block;
+    margin: 30px auto;
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #333; /* Dark button */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #555; /* Darker gray button on hover */
+    transform: translateY(-2px); /* Subtle lift effect */
+}
+
+/* Section Styles */
+.section {
+    display: none; /* Hide all sections initially */
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
